@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Te gustaria salir conmigo?</title>
+    <title>¿Quieres ser mi San Valentín?</title>
 </head>
 <body>
-    <div class="container">
-        <div class="tenor-gif-embed" data-postid="2871482820979272488" data-share-method="host" data-aspect-ratio="1.28351" data-width="100%"><a href="https://tenor.com/view/mochi-pet-mochi-cat-cute-squiddy-gif-2871482820979272488">Mochi Pet GIF</a>from <a href="https://tenor.com/search/mochi-gifs">Mochi GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-        <h1>¿Te gustaria salir conmigo? 🥰</h1>
-        <p>Eres la persona mas especial del mundo</p>
-        <div class="btn">
-            <a href="si.html">SI</a>
-            <a href="no1.html">NO</a>
+    <div class="card">
+        <h2>Hola 😊</h2>
+        <h1>¿Quieres ser mi San Valentín? ❤️</h1>
+        <p>Me gustaría pasar el 14 de Febrero a tu lado.</p>
+        <p>¿Te gustaría ir por un café o a cenar?</p>
+        <div class="btn-container">
+            <a href="si.html" class="btn yes">¡Sí, me encantaría! 💖</a>
+            <a href="no.html" class="btn no">Tal vez en otra ocasión 🤔</a>
         </div>
+        <div class="gif-container">
+            <img src="https://raw.githubusercontent.com/DavidDevGt/love_u_caroline/main/src/img/cute-bear-loop.gif" alt="Cute Bear GIF">
+        </div>
+        <p class="time">Última actualización: <span id="date-time"></span></p>
     </div>
+
+    <script>
+        document.getElementById("date-time").innerText = new Date().toLocaleString();
+    </script>
 </body>
 </html>
